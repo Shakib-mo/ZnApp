@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@drawable/corner_background">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/znlogo23"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/te_br_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Br name"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:textColor="@color/black"
+                android:layout_margin="5dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/l1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enquiry   : "
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/pink"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:id="@+id/te_enquiry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enquiry"
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/l3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/l2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Course   : "
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/pink"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:id="@+id/te_course"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Course"
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/l3">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Call Us    : "
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/pink"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:id="@+id/te_mobile_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Call us"
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="#E81505"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

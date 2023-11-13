@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/sky"
+    android:orientation="vertical">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:background="@drawable/corner_background">
+
+        <ImageView
+            android:id="@+id/toolbar_menu"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:src="@drawable/toolbar_menu"
+            android:layout_margin="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name  : "
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/pink"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:id="@+id/te_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/l1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address   : "
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/pink"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:id="@+id/te_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/l3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/l2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aadhar no   : "
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/pink"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:id="@+id/te_adhar_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aadhar no"
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/l4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/l3">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile no   : "
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/pink"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:id="@+id/te_mobile_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mobile"
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/l5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/l4">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender : "
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/pink"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:id="@+id/te_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/l6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/l5">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Heigest Qual : "
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/pink"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:id="@+id/te_heigest_qual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Heigest Qual"
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/l7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/l6">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email   : "
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/pink"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:id="@+id/te_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/l7">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DOF   : "
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/pink"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:id="@+id/te_DOF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dof"
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/l9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/l8">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description   : "
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/pink"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:id="@+id/te_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/l10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/l9">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RoleID   : "
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/pink"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:id="@+id/te_Role_ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/l10">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Faculty For  : "
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/pink"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:id="@+id/te_facultyFor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/l12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/l11">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salaried  : "
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/pink"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:id="@+id/te_salaried"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Salaried"
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/l12">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salary  : "
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/pink"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:id="@+id/te_Salary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Salary"
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

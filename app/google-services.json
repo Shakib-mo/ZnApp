@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "530088865497",
+    "project_id": "zn-training-school",
+    "storage_bucket": "zn-training-school.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:530088865497:android:47c4650729740ca229d8c8",
+        "android_client_info": {
+          "package_name": "shakibk.app.zntrainingschool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "530088865497-ac820b8qjnmo9mf1eprahn9m05lb3e71.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs4Eb4iyT81gPUFNPFRnaY_JJBCFGaphk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "530088865497-ac820b8qjnmo9mf1eprahn9m05lb3e71.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:530088865497:android:9b366a5a734398ab29d8c8",
+        "android_client_info": {
+          "package_name": "zn.app.znapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "530088865497-ac820b8qjnmo9mf1eprahn9m05lb3e71.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs4Eb4iyT81gPUFNPFRnaY_JJBCFGaphk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "530088865497-ac820b8qjnmo9mf1eprahn9m05lb3e71.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

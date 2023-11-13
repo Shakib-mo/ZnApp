@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Logine_Act"
+    android:background="@drawable/logine_droble">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="45dp">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:src="@drawable/znlogo23"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Signup"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:textColor="@color/red"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="130dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/t1"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/ed_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:text="admin"
+                android:inputType="textPersonName"
+                android:textSize="20dp"
+                android:drawableLeft="@drawable/phone"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/ed_corner"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <EditText
+                android:id="@+id/ed_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:inputType="number"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="123
+"
+                android:drawableLeft="@drawable/password"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ed_corner"
+                app:layout_constraintTop_toBottomOf="@id/ed_name"/>
+
+            <TextView
+                android:id="@+id/te"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select    Branch  "
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                android:drawableEnd="@drawable/arrow"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="14dp"
+                app:layout_constraintTop_toBottomOf="@id/ed_password"/>
+
+            <LinearLayout
+                android:id="@+id/lo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/te"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/ed_corner"
+                android:layout_marginEnd="60dp"
+                android:layout_marginTop="5dp">
+
+                <Spinner
+                    android:id="@+id/spiner_"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_summit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/red"
+                android:textAllCaps="false"
+                android:layout_marginEnd="45dp"
+                android:background="@drawable/ed_corner"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lo"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

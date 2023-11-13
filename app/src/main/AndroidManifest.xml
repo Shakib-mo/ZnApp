@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ZNApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".Update_Branch_Details_Act"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Course_Update_Act"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Branch_Enquiry_Display"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Enqury_Display"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Logine_Act"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Branch_Dtl"
+            android:exported="true" />
+        <activity
+            android:name=".Course_Edt"
+            android:exported="true" />
+        <activity
+            android:name=".Organization_Home"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Faculty_Act"
+            android:exported="true" />
+        <activity
+            android:name=".Enquiry"
+            android:exported="true" />
+        <activity
+            android:name=".First_MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Role_Disply_Act"
+            android:exported="true" />
+        <activity
+            android:name=".Course_Disply"
+            android:exported="true" />
+        <activity
+            android:name=".Employ_Display_Act"
+            android:exported="true" />
+        <activity
+            android:name=".Employ_Edt_Act"
+            android:exported="true" />
+        <activity
+            android:name=".Collage_Display"
+            android:exported="true" />
+    </application>
+
+</manifest>
